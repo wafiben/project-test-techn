@@ -24,9 +24,24 @@
   height: 580px;
   background: #ebeaef;
   border-radius: 10px;
+  padding-top: 32px;
+  padding-left: 31px;
 }
 .content {
   display: flex;
   flex-direction: column;
 }
-
+.single-unit {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21.09px;
+  color: #30475e;
+}
+.container-single-unit{
+  width:100%
+}
+.container-single-unit:hover {
+  background: linear-gradient(0deg, #b9b9bc, #b9b9bc), #b9b9bc;
+  cursor: pointer;
+  width:1000px
+}

@@ -2,7 +2,6 @@ import React from "react";
 import InformationIcon from "../icons/InformationIcon.png";
 import FormConvert from "./ConvertForm/ConvertForm";
 
-
 const layouContainer = {
   width: "1143px",
   height: "824px",
@@ -35,10 +34,9 @@ const contentFormsStyle = {
   margin: false,
 };
 function ContainerLayout(props) {
-  const { imageOne, imageTwo } = props;
+  const { imageOne, imageTwo, units } = props;
   return (
     <div style={layouContainer}>
-  
       <div style={informTitleConverterStyle}>
         <img
           src={InformationIcon}
@@ -49,8 +47,8 @@ function ContainerLayout(props) {
         <p style={unitConverterStyle}>Unit Converter</p>
       </div>
       <div style={contentFormsStyle}>
-        <FormConvert imageOne={imageOne} imageTwo={imageTwo} />
-        <FormConvert imageOne={imageOne} imageTwo={imageTwo} />
+        <FormConvert imageOne={imageOne} imageTwo={imageTwo} units={units} />
+        <FormConvert imageOne={imageOne} imageTwo={imageTwo} units={units} />
       </div>
     </div>
   );

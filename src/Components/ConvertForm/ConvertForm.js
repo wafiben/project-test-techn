@@ -1,12 +1,20 @@
 import React from "react";
 import "./ConvertForm.css";
 
-function FormConvert({ imageOne, imageTwo }) {
+function FormConvert({ imageOne, imageTwo, units }) {
   return (
     <div className="parent-container">
       <div className="content">
         <input id="inputValue" />
-        <div className="unitField"></div>
+        <div className="unitField">
+          {units.map((elt, index) => (
+            <div className="container-single-unit">
+              <h3 key={index} className="single-unit">
+                {elt}
+              </h3>
+            </div>
+          ))}
+        </div>
       </div>
 
       <div className="icons">

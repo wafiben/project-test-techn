@@ -1,9 +1,9 @@
 import ContainerLayout from "./Components/ContainerLayout";
 import clearImage from "./icons/ClearIcon.png";
 import copyImage from "./icons/CopyIcon.jpg";
-
 import Menu from "./Components/Menu/Menu";
 import { useState } from "react";
+import { units, itemOfMenuInitial } from "./data.js";
 
 const containerOfLayoutStyle = {
   width: "1463px",
@@ -29,32 +29,8 @@ const menuStyle = {
 };
 
 function App() {
-  const itemOfMenuInitial = [
-    {
-      id: 0,
-      title: "Drilling conversions",
-      sons: [
-        "Mud Weight units",
-        "Axial Spring Constant",
-        "Axial Dampening Coef",
-        "Torsional Spring Constant",
-        "Pressure Gradient units",
-        "Yield Slurry units",
-        "Footage Cost units",
-        "Dogleg units",
-        "Float Rate units",
-        "Drilling Rate units",
-        "Weight length units",
-        "Geothermal Gradient",
-      ],
-    },
-    { id: 1, title: "Production conversions" },
-    { id: 2, title: "Force and Power  conversions" },
-    { id: 3, title: "Fluid conversions" },
-    { id: 4, title: "Gas conversions" },
-    { id: 5, title: "General conversions" },
-  ];
   const [itemOfMenu, setItemOfMenu] = useState(itemOfMenuInitial);
+
   return (
     <div style={pageContainerStyle}>
       <div style={containerOfLayoutStyle}>
@@ -62,6 +38,7 @@ function App() {
           <Menu itemOfMenu={itemOfMenu} />
         </div>
         <ContainerLayout
+          units={units}
           imageOne={{ icon: clearImage, name: "clear-image" }}
           imageTwo={{ icon: copyImage, content: "copy-image" }}
         />
