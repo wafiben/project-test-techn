@@ -1,0 +1,15 @@
+.item {
+  width: 214px;
+  height: 38px;
+  color: white;
+  background-color: #112031;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px 0px 0px 10px;
+  margin-bottom: -10px;
+}
+.item:hover {
+  cursor: pointer;
+}

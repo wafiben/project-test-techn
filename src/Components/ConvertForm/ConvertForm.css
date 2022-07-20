@@ -1,0 +1,32 @@
+.parent-container {
+  position: relative;
+}
+.icons {
+  display: flex;
+  align-items: center;
+  width: 40px;
+  justify-content: space-around;
+  position: absolute;
+  top: 15px;
+  left: 424px;
+}
+
+#inputValue {
+  width: 475px;
+  height: 40px;
+  background: #ebeaef;
+  border-radius: 10px;
+  margin-bottom: 17px;
+}
+
+.unitField {
+  width: 475px;
+  height: 580px;
+  background: #ebeaef;
+  border-radius: 10px;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
