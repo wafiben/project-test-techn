@@ -10,6 +10,31 @@
   border-radius: 10px 0px 0px 10px;
   margin-bottom: -10px;
 }
-.item:hover {
+.item:hover,
+.single-item:hover {
   cursor: pointer;
+}
+.single-item {
+  width: 180.15px;
+  height: 37.1px;
+  color: white;
+  background-color: #112031;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px 0px 0px 10px;
+  margin-bottom: -10px;
+}
+.big-container-items {
+  position: absolute;
+}
+.container-single-item {
+  position: relative;
+  left: 34px;
+}
+.search{
+  margin-top:15px;
+  background-color: #30475E
+ 
 }

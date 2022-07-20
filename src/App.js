@@ -3,6 +3,7 @@ import clearImage from "./icons/ClearIcon.png";
 import copyImage from "./icons/CopyIcon.jpg";
 
 import Menu from "./Components/Menu/Menu";
+import { useState } from "react";
 
 const containerOfLayoutStyle = {
   width: "1463px",
@@ -28,7 +29,7 @@ const menuStyle = {
 };
 
 function App() {
-  const itemOfMenu = [
+  const itemOfMenuInitial = [
     {
       id: 0,
       title: "Drilling conversions",
@@ -53,13 +54,12 @@ function App() {
     { id: 4, title: "Gas conversions" },
     { id: 5, title: "General conversions" },
   ];
+  const [itemOfMenu, setItemOfMenu] = useState(itemOfMenuInitial);
   return (
     <div style={pageContainerStyle}>
       <div style={containerOfLayoutStyle}>
         <div style={menuStyle}>
-          <Menu itemOfMenu={itemOfMenu}>
-            <input />
-          </Menu>
+          <Menu itemOfMenu={itemOfMenu} />
         </div>
         <ContainerLayout
           imageOne={{ icon: clearImage, name: "clear-image" }}
