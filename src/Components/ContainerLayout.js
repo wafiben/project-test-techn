@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useRef } from "react";
 import InformationIcon from "../icons/InformationIcon.png";
 import FormConvert from "./ConvertForm/ConvertForm";
 
@@ -18,7 +18,6 @@ const unitConverterStyle = {
   width: "201px",
   marginLeft: "10px",
 
-  /*  lineHeight:"23.44px" */
 };
 const informTitleConverterStyle = {
   display: "flex",
@@ -47,8 +46,16 @@ function ContainerLayout(props) {
         <p style={unitConverterStyle}>Unit Converter</p>
       </div>
       <div style={contentFormsStyle}>
-        <FormConvert imageOne={imageOne} imageTwo={imageTwo} units={units} />
-        <FormConvert imageOne={imageOne} imageTwo={imageTwo} units={units} />
+        <FormConvert
+          imageOne={imageOne}
+          imageTwo={imageTwo}
+          units={units}
+        />
+        <FormConvert
+          imageOne={imageOne}
+          imageTwo={imageTwo}
+          units={units}
+        />
       </div>
     </div>
   );
