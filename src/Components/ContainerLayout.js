@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React from "react";
 import InformationIcon from "../icons/InformationIcon.png";
 import FormConvert from "./ConvertForm/ConvertForm";
 

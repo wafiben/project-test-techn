@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./ConvertForm.css";
 
 function FormConvert({ imageOne, imageTwo, units }) {
-  const [show, setShow] = useState(false);
+
   const [inputUnit, setInputUnit] = useState("");
   const handleClear = () => {
     setInputUnit("");
